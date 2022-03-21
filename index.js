@@ -12,7 +12,8 @@ app.use(
     origin: "*",
   })
 );
-const URl = "mongodb://localhost:27017";
+const URl =
+  "mongodb+srv://suriya:suriya1998@cluster0.ppha5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 let authenticate = (req, res, next) => {
   console.log(req.headers);
   if (req.headers.authorization) {
